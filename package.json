@@ -1,0 +1,42 @@
+{
+  "name": "hono-recaptcha",
+  "version": "0.0.1",
+  "author": "Raphaël Bronsveld (https://x.com/raphaelbronsvld)",
+  "keywords": [
+    "hono",
+    "hono middleware",
+    "middleware",
+    "recaptcha"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "license": "MIT",
+  "private": false,
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raphaelbronsveld/hono-recaptcha.git"
+  },
+  "bugs": {
+    "url": "https://github.com/raphaelbronsveld/hono-recaptcha/issues"
+  },
+  "scripts": {
+    "test": "jest",
+    "build": "rimraf dist && tsc",
+    "prerelease": "yarn build && yarn test",
+    "release": "yarn publish"
+  },
+  "peerDependencies": {
+    "hono": "*"
+  },
+  "devDependencies": {
+    "rimraf": "^5.0.1",
+    "typescript": "^5.1.6"
+  }
+}
